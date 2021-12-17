@@ -13,6 +13,10 @@
 		06F8B24A276C29790042BDB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F8B248276C29790042BDB0 /* Main.storyboard */; };
 		06F8B24C276C297A0042BDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F8B24B276C297A0042BDB0 /* Assets.xcassets */; };
 		06F8B24F276C297A0042BDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F8B24D276C297A0042BDB0 /* LaunchScreen.storyboard */; };
+		06F8B257276C59DD0042BDB0 /* TravelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8B256276C59DD0042BDB0 /* TravelTableViewController.swift */; };
+		06F8B259276C62C10042BDB0 /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8B258276C62C10042BDB0 /* TravelTableViewCell.swift */; };
+		06F8B25C276C650C0042BDB0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 06F8B25B276C650C0042BDB0 /* Kingfisher */; };
+		06F8B25E276C6B0F0042BDB0 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8B25D276C6B0F0042BDB0 /* Travel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		06F8B24B276C297A0042BDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F8B24E276C297A0042BDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06F8B250276C297A0042BDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F8B256276C59DD0042BDB0 /* TravelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewController.swift; sourceTree = "<group>"; };
+		06F8B258276C62C10042BDB0 /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		06F8B25D276C6B0F0042BDB0 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F8B25C276C650C0042BDB0 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,9 @@
 				06F8B244276C29790042BDB0 /* SceneDelegate.swift */,
 				06F8B246276C29790042BDB0 /* ViewController.swift */,
 				06F8B248276C29790042BDB0 /* Main.storyboard */,
+				06F8B258276C62C10042BDB0 /* TravelTableViewCell.swift */,
+				06F8B256276C59DD0042BDB0 /* TravelTableViewController.swift */,
+				06F8B25D276C6B0F0042BDB0 /* Travel.swift */,
 				06F8B24B276C297A0042BDB0 /* Assets.xcassets */,
 				06F8B24D276C297A0042BDB0 /* LaunchScreen.storyboard */,
 				06F8B250276C297A0042BDB0 /* Info.plist */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = Homework019;
+			packageProductDependencies = (
+				06F8B25B276C650C0042BDB0 /* Kingfisher */,
+			);
 			productName = Homework019;
 			productReference = 06F8B23F276C29790042BDB0 /* Homework019.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 06F8B236276C29790042BDB0;
+			packageReferences = (
+				06F8B25A276C650C0042BDB0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 06F8B240276C29790042BDB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +158,9 @@
 				06F8B247276C29790042BDB0 /* ViewController.swift in Sources */,
 				06F8B243276C29790042BDB0 /* AppDelegate.swift in Sources */,
 				06F8B245276C29790042BDB0 /* SceneDelegate.swift in Sources */,
+				06F8B25E276C6B0F0042BDB0 /* Travel.swift in Sources */,
+				06F8B259276C62C10042BDB0 /* TravelTableViewCell.swift in Sources */,
+				06F8B257276C59DD0042BDB0 /* TravelTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06F8B25A276C650C0042BDB0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06F8B25B276C650C0042BDB0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06F8B25A276C650C0042BDB0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06F8B237276C29790042BDB0 /* Project object */;
 }
